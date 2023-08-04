@@ -1,0 +1,32 @@
+Top 9 HTTP REQUEST methods:
+
+GET /api/employees/(employee-id)
+Retorna um funcionário especifico a partir do employee-id. Retorna dados de um servidor. Isto deve somente retornar o dado sem afetar quaisquer outros dados.
+ 
+POST /api/employees/department
+Cria um recurso de departamento. O dado é incluido no corpo da solicitação
+
+PUT /api/employees/123
+Altera o funcionario pelo employee-id. Similiar ao POST mas é usado para alterar um recurso existente. Todo o recurso é alterado de uma só vez.
+
+PATCH /api/employees/123 {
+"name":"Brij"
+}
+Altera o nome do funcionario id 123. Também usado para alterar recursos mas ele somente altera os campos que estao incluidos no recurso.
+
+DELETE /api/employees/235
+Deleta o funcionario pelo id de funcionário.
+
+HEAD /api/employees/
+Semelhante ao get ms não retorna a lista de funcionários. Ticipamente isto é usado para checar se um recurso está disponivel e coleta os metadados.
+
+OPTIONS /api/main.html/1.1
+Retorna os metodos permitidos para o http nesta URL. É usado para coletar informações sobre a possivel opção de comunicação para trazer a URL ou um Asteristico para referneciar todo o servicor 
+
+TRACE /api/mail.html
+Retorna exatamente o que o cliente envia. Usado para diagnostico ecoando a requisição recebida par que um cliente veja quais alterações ou adições foram feitos pelo intermediário.
+
+CONNECT www.example.com:443HTTP/1:1
+Conecta a url específica. Usado para fazer a conexão ponto a ponto entre um cliente e um servidor fazendo um tunel entre eles por um caminho de conexão.
+
+
